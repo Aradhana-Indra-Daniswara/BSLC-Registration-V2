@@ -1,0 +1,6 @@
+.selected{
+  & > p{
+    color: $bslc-tosca;
+  }
+  border-bottom: 2px solid $bslc-tosca;
+}

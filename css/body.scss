@@ -1,0 +1,44 @@
+main {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &>h1 {
+    font-size: 3rem;
+    font-family: Inter;
+    letter-spacing: -1px;
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    width: min-content;
+    margin: 0 auto 2rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-bottom: 2px solid $border-gray;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    div {
+      cursor: pointer;
+      display: flex;
+      place-items: center;
+      height: 4rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+}

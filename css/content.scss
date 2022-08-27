@@ -1,0 +1,22 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .text{
+    text-align: start;
+    p{
+      font-weight: 700;
+      color: $text-gray;
+    }
+  }
+  .description{
+    text-align: justify;
+    line-height: 1.5;
+  }
+}

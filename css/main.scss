@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$border-gray: #D9D9D9;
+$bslc-tosca: #19A89D;
+$text-gray: #B6B6B6;
+
+@font-face {
+  font-family: Interstate;
+  src: url(../assets/fonts/Interstate-Regular.otf);
+}
+@font-face {
+  font-family: InterstateBlack;
+  src: url(../assets/fonts/Interstate-Black.otf);
+}
+
+@import "./header.scss";
+@import "./body.scss";
+@import "./customclass.scss";
+@import "./content.scss";
