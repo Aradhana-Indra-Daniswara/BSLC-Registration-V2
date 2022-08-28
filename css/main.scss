@@ -8,6 +8,9 @@ $border-gray: #D9D9D9;
 $bslc-tosca: #19A89D;
 $text-gray: #B6B6B6;
 
+$navigation-border: 3px solid $border-gray;
+$selected-border: 3px solid $bslc-tosca;
+
 @font-face {
   font-family: Interstate;
   src: url(../assets/fonts/Interstate-Regular.otf);

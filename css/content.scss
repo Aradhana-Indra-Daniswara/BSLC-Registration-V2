@@ -14,9 +14,34 @@
       font-weight: 700;
       color: $text-gray;
     }
+    h2{
+      font-size: 2rem;
+    }
   }
   .description{
     text-align: justify;
     line-height: 1.5;
+  }
+  .attribute{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h3{
+      font-size: 1rem;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+    & > div{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      div{
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+    }
   }
 }

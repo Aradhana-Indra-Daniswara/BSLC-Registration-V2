@@ -23,7 +23,7 @@ main {
       content: '';
       position: absolute;
       width: 100%;
-      border-bottom: 2px solid $border-gray;
+      border-bottom: $navigation-border;
       bottom: 0;
       z-index: -1;
     }

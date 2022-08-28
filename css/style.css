@@ -58,7 +58,7 @@ main nav::after {
   content: "";
   position: absolute;
   width: 100%;
-  border-bottom: 2px solid #D9D9D9;
+  border-bottom: 3px solid #D9D9D9;
   bottom: 0;
   z-index: -1;
 }
@@ -74,7 +74,7 @@ main nav p {
 }
 
 .selected {
-  border-bottom: 2px solid #19A89D;
+  border-bottom: 3px solid #19A89D;
 }
 .selected > p {
   color: #19A89D;
@@ -98,9 +98,33 @@ main nav p {
   font-weight: 700;
   color: #B6B6B6;
 }
+.content .text h2 {
+  font-size: 2rem;
+}
 .content .description {
   text-align: justify;
   line-height: 1.5;
+}
+.content .attribute {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content .attribute h3 {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.content .attribute > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content .attribute > div div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */
