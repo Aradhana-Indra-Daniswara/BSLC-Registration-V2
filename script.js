@@ -26,3 +26,7 @@ $(function() {
     $('.nindya, .mentor').css("display", "none");
   })
 });
+
+function goToMainWebsite(){
+  window.open('https://new.bslc.or.id/', '_blank');
+}

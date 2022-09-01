@@ -5,6 +5,9 @@ header{
   gap: 1rem;
   padding: 1.5rem;
   border-bottom: 1px solid $border-gray;
+  *{
+    cursor: pointer;
+  }
   img{
     height: 3rem;
   }
@@ -13,6 +16,9 @@ header{
   }
   p{
     font-family: Interstate;
+    &:hover{
+      color: $bslc-tosca;
+    }
   }
   .mobile_header{
     color: $bslc-tosca;
