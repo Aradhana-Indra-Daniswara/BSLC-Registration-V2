@@ -299,6 +299,7 @@ footer {
 }
 
 .closed_text {
+  margin-top: -1.5rem;
   color: #B6B6B6 !important;
 }
 
