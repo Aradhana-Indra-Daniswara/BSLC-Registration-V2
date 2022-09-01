@@ -4,3 +4,10 @@
   }
   border-bottom: $selected-border;
 }
+.closed_text{
+  color: $text-gray !important;
+}
+.closed_button{
+  background-color: $text-gray !important;
+  cursor: not-allowed;
+}

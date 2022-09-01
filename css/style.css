@@ -21,7 +21,7 @@ header {
   border-bottom: 1px solid #D9D9D9;
 }
 header img {
-  height: 2.25rem;
+  height: 3rem;
 }
 header strong {
   font-family: InterstateBlack;
@@ -32,6 +32,21 @@ header p {
 header .mobile_header {
   color: #19A89D;
   font-size: 2.25rem;
+}
+header .pc_header {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  header .mobile_header {
+    display: none;
+  }
+  header .pc_header {
+    display: block;
+    font-size: 1.75rem;
+  }
+  header .main_logo {
+    height: 4rem;
+  }
 }
 
 main {
@@ -45,6 +60,10 @@ main > h1 {
   font-size: 3rem;
   font-family: Inter;
   letter-spacing: -1px;
+}
+main > h1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 main nav {
   display: flex;
@@ -72,12 +91,34 @@ main nav div {
 main nav p {
   font-weight: 500;
 }
-
-.selected {
-  border-bottom: 3px solid #19A89D;
+@media only screen and (min-width: 425px) {
+  main {
+    padding: 4rem;
+    text-align: left;
+  }
+  main nav {
+    margin-left: 0;
+  }
 }
-.selected > p {
-  color: #19A89D;
+@media only screen and (min-width: 768px) {
+  main {
+    text-align: start;
+  }
+  main nav {
+    margin: 0 0 2rem;
+  }
+  main nav p {
+    font-size: 1.25rem;
+  }
+  main > h1 {
+    font-size: 4rem;
+    font-family: Inter;
+    letter-spacing: -1px;
+  }
+  main > h1 p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
 
 .content {
@@ -90,6 +131,9 @@ main nav p {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+.content .title img {
+  height: 4rem;
 }
 .content .text {
   text-align: start;
@@ -125,6 +169,104 @@ main nav p {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+.content a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #19A89D;
+  width: max-content;
+  padding: 1.25rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 425px) {
+  .content {
+    max-width: 750px;
+  }
+  .content a {
+    margin: 0;
+  }
+  .content .title {
+    justify-content: flex-start;
+  }
+  .content .benefits {
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .content .title {
+    justify-content: flex-start;
+  }
+  .content .text h2 {
+    font-size: 3rem;
+  }
+  .content .attribute {
+    flex-direction: row;
+  }
+  .content .attribute > div {
+    flex-grow: 1;
+  }
+}
+
+.mentee a {
+  color: #262626;
+  background-color: #D7E024;
+}
+
+footer {
+  background-color: #15191E;
+  color: #E9E9E9;
+  padding: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer a {
+  display: block;
+}
+footer .contacts {
+  display: flex;
+  gap: 1.5rem;
+}
+footer .logo {
+  display: flex;
+  place-items: center;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+  }
+  footer > div {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.selected {
+  border-bottom: 3px solid #19A89D;
+}
+.selected > p {
+  color: #19A89D;
+}
+
+.closed_text {
+  color: #B6B6B6 !important;
+}
+
+.closed_button {
+  background-color: #B6B6B6 !important;
+  cursor: not-allowed;
 }
 
 /*# sourceMappingURL=style.css.map */

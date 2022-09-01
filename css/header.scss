@@ -6,7 +6,7 @@ header{
   padding: 1.5rem;
   border-bottom: 1px solid $border-gray;
   img{
-    height: 2.25rem;
+    height: 3rem;
   }
   strong{
     font-family: InterstateBlack;
@@ -17,5 +17,20 @@ header{
   .mobile_header{
     color: $bslc-tosca;
     font-size: 2.25rem;
+  }
+  .pc_header{
+    display: none;
+  }
+  @media only screen and (min-width: 768px) {
+    .mobile_header{
+      display: none;
+    }
+    .pc_header{
+      display: block;
+      font-size: 1.75rem;
+    }
+    .main_logo{
+      height: 4rem;
+    }
   }
 }

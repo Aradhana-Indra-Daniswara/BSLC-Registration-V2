@@ -6,7 +6,11 @@
 
 $border-gray: #D9D9D9;
 $bslc-tosca: #19A89D;
+$bslc-lime: #D7E024;
+$text-dark: #262626;
 $text-gray: #B6B6B6;
+$footer-dark: #15191E;
+$footer-white: #E9E9E9;
 
 $navigation-border: 3px solid $border-gray;
 $selected-border: 3px solid $bslc-tosca;
@@ -22,5 +26,6 @@ $selected-border: 3px solid $bslc-tosca;
 
 @import "./header.scss";
 @import "./body.scss";
-@import "./customclass.scss";
 @import "./content.scss";
+@import "./footer.scss";
+@import "./customclass.scss";

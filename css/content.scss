@@ -1,47 +1,113 @@
-.content{
+.content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  .title{
+
+  .title {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    img {
+      height: 4rem;
+    }
   }
-  .text{
+
+  .text {
     text-align: start;
-    p{
+
+    p {
       font-weight: 700;
       color: $text-gray;
     }
-    h2{
+
+    h2 {
       font-size: 2rem;
     }
   }
-  .description{
+
+  .description {
     text-align: justify;
     line-height: 1.5;
   }
-  .attribute{
+
+  .attribute {
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    h3{
+
+    h3 {
       font-size: 1rem;
       text-align: left;
       margin-bottom: 0.5rem;
     }
-    & > div{
+
+    &>div {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
 
-      div{
+      div {
         display: flex;
         align-items: center;
         gap: 0.75rem;
       }
     }
+
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: $bslc-tosca;
+    width: max-content;
+    padding: 1.25rem 2.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 425px) {
+    a {
+      margin: 0;
+    }
+
+    .title {
+      justify-content: flex-start;
+    }
+
+    max-width: 750px;
+    .benefits{
+      max-width: 300px; 
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .title {
+      justify-content: flex-start;
+    }
+
+    .text {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .attribute {
+      flex-direction: row;
+      & > div{
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.mentee {
+  a {
+    color: $text-dark;
+    background-color: $bslc-lime;
   }
 }

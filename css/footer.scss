@@ -1,0 +1,41 @@
+footer {
+  background-color: $footer-dark;
+  color: $footer-white;
+  padding: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  a {
+    display: block;
+  }
+
+  .contacts {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    display: flex;
+    place-items: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+
+    &>div {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+}
