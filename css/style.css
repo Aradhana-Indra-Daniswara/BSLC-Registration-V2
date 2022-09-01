@@ -55,6 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1400px;
 }
 main > h1 {
   font-size: 3rem;
@@ -120,57 +121,78 @@ main nav p {
     font-weight: 400;
   }
 }
+@media only screen and (min-width: 1400px) {
+  main {
+    margin: 0 auto;
+  }
+}
 
-.content {
+.content > img {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .content > img {
+    display: block;
+    width: 40%;
+    max-width: 700px;
+  }
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.content .title {
+.content-wrapper .title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.content .title img {
+.content-wrapper .title img {
   height: 4rem;
 }
-.content .text {
+.content-wrapper .text {
   text-align: start;
 }
-.content .text p {
+.content-wrapper .text p {
   font-weight: 700;
   color: #B6B6B6;
 }
-.content .text h2 {
+.content-wrapper .text h2 {
   font-size: 2rem;
 }
-.content .description {
+.content-wrapper .description {
   text-align: justify;
   line-height: 1.5;
 }
-.content .attribute {
+.content-wrapper .attribute {
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.content .attribute h3 {
+.content-wrapper .attribute h3 {
   font-size: 1rem;
   text-align: left;
   margin-bottom: 0.5rem;
 }
-.content .attribute > div {
+.content-wrapper .attribute > div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.content .attribute > div div {
+.content-wrapper .attribute > div div {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
-.content a {
+.content-wrapper a {
   display: block;
   text-decoration: none;
   color: white;
@@ -182,30 +204,30 @@ main nav p {
   margin: 0 auto;
 }
 @media only screen and (min-width: 425px) {
-  .content {
-    max-width: 750px;
+  .content-wrapper {
+    max-width: 600px;
   }
-  .content a {
+  .content-wrapper a {
     margin: 0;
   }
-  .content .title {
+  .content-wrapper .title {
     justify-content: flex-start;
   }
-  .content .benefits {
+  .content-wrapper .benefits {
     max-width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .content .title {
+  .content-wrapper .title {
     justify-content: flex-start;
   }
-  .content .text h2 {
+  .content-wrapper .text h2 {
     font-size: 3rem;
   }
-  .content .attribute {
+  .content-wrapper .attribute {
     flex-direction: row;
   }
-  .content .attribute > div {
+  .content-wrapper .attribute > div {
     flex-grow: 1;
   }
 }
@@ -267,6 +289,16 @@ footer .logo {
 .closed_button {
   background-color: #B6B6B6 !important;
   cursor: not-allowed;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #19A89D;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

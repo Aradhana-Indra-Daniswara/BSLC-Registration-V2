@@ -4,6 +4,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1400px;
+
+
 
   &>h1 {
     font-size: 3rem;
@@ -45,19 +48,23 @@ main {
       font-weight: 500;
     }
   }
-  @media only screen and (min-width: 425px){
+
+  @media only screen and (min-width: 425px) {
     padding: 4rem;
     text-align: left;
-    nav{
+
+    nav {
       margin-left: 0;
     }
   }
+
   @media only screen and (min-width: 768px) {
     text-align: start;
 
     nav {
       margin: 0 0 2rem;
-      p{
+
+      p {
         font-size: 1.25rem;
       }
     }
@@ -72,5 +79,9 @@ main {
         font-weight: 400;
       }
     }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    margin: 0 auto;
   }
 }

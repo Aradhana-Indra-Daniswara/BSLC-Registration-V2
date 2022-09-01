@@ -1,4 +1,20 @@
-.content {
+.content{
+  & > img{
+    display: none;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    & > img{
+      display: block;
+      width: 40%;
+      max-width: 700px;
+    }
+  }
+}
+.content-wrapper{
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -79,7 +95,7 @@
       justify-content: flex-start;
     }
 
-    max-width: 750px;
+    max-width: 600px;
     .benefits{
       max-width: 300px; 
     }
