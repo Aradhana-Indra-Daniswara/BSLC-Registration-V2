@@ -155,7 +155,7 @@ main nav p {
   gap: 1rem;
 }
 .content-wrapper .title img {
-  height: 4rem;
+  height: 5rem;
 }
 .content-wrapper .text {
   text-align: start;
@@ -238,49 +238,55 @@ main nav p {
 }
 
 footer {
+  width: 100%;
+  background-color: #15191E;
+}
+
+.footer-container {
   background-color: #15191E;
   color: #E9E9E9;
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 400;
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1400px;
 }
-footer > div {
+.footer-container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-footer a {
+.footer-container a {
   display: block;
 }
-footer .contacts {
+.footer-container .contacts {
   display: flex;
   gap: 1.5rem;
 }
-footer .logo {
+.footer-container .logo {
   display: flex;
   place-items: center;
 }
-footer .logo img {
+.footer-container .logo img {
   height: 15rem;
 }
 @media only screen and (min-width: 768px) {
-  footer {
+  .footer-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 2rem 4rem;
   }
-  footer > div {
+  .footer-container > div {
     align-items: flex-start;
     justify-content: center;
   }
 }
-@media only screen and (min-width: 1500px) {
-  footer {
-    padding: 4rem 15%;
+@media only screen and (min-width: 1400px) {
+  .footer-container {
+    margin: 0 auto;
   }
 }
 
@@ -313,6 +319,13 @@ footer .logo img {
   ::-webkit-scrollbar {
     width: 18px;
   }
+}
+
+.special {
+  background-color: #15191E;
+  padding: 2rem 0;
+  color: #E9E9E9;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

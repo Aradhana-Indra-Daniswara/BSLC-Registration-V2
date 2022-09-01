@@ -1,12 +1,18 @@
-footer {
+footer{
+  width: 100%;
+  background-color: $footer-dark;
+
+}
+.footer-container {
   background-color: $footer-dark;
   color: $footer-white;
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 400;
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1400px;
   
 
   &>div {
@@ -39,15 +45,14 @@ footer {
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 2rem 4rem; 
 
     &>div {
       align-items: flex-start;
       justify-content: center;
     }
   }
-  @media only screen and (min-width: 1500px) {
-    padding: 4rem 15%;
-
+  @media only screen and (min-width: 1400px) {
+    margin: 0 auto;
   }
 }
