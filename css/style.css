@@ -241,7 +241,8 @@ footer {
   background-color: #15191E;
   color: #E9E9E9;
   padding: 2rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -263,15 +264,23 @@ footer .logo {
   display: flex;
   place-items: center;
 }
+footer .logo img {
+  height: 15rem;
+}
 @media only screen and (min-width: 768px) {
   footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 4rem;
+    padding: 4rem;
   }
   footer > div {
     align-items: flex-start;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  footer {
+    padding: 4rem 15%;
   }
 }
 
@@ -297,8 +306,13 @@ footer .logo {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
   background-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

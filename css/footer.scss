@@ -2,10 +2,12 @@ footer {
   background-color: $footer-dark;
   color: $footer-white;
   padding: 2rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  
 
   &>div {
     display: flex;
@@ -26,16 +28,26 @@ footer {
   .logo {
     display: flex;
     place-items: center;
+
+    img {
+      height: 15rem;
+
+    }
   }
+
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 4rem;
+    padding: 4rem;
 
     &>div {
       align-items: flex-start;
       justify-content: center;
     }
+  }
+  @media only screen and (min-width: 1500px) {
+    padding: 4rem 15%;
+
   }
 }
