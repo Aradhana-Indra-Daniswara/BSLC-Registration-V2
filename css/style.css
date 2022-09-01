@@ -156,6 +156,7 @@ main nav p {
 }
 .content-wrapper .title img {
   height: 5rem;
+  width: 5rem;
 }
 .content-wrapper .text {
   text-align: start;
