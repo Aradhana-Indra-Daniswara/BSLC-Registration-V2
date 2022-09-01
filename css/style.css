@@ -252,12 +252,12 @@ footer {
 .footer-container {
   background-color: #15191E;
   color: #E9E9E9;
-  padding: 1rem;
+  padding: 2rem;
   font-weight: 400;
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   max-width: 1400px;
 }
 .footer-container > div {
@@ -320,12 +320,12 @@ footer {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0;
   background-color: transparent;
 }
 @media only screen and (min-width: 768px) {
   ::-webkit-scrollbar {
-    width: 18px;
+    width: 16px;
   }
 }
 

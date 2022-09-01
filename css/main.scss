@@ -40,11 +40,11 @@ $selected-border: 3px solid $bslc-tosca;
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0;
   background-color: transparent;
 
   @media only screen and (min-width: 768px) {
-    width: 18px;
+    width: 16px;
   }
 }
 .special{

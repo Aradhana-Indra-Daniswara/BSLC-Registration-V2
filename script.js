@@ -28,5 +28,5 @@ $(function() {
 });
 
 function goToMainWebsite(){
-  window.open('https://new.bslc.or.id/', '_blank');
+  location.href = 'https://new.bslc.or.id/';
 }
