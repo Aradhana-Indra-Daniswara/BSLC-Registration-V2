@@ -23,7 +23,7 @@ main {
     gap: 4rem;
     position: relative;
     width: min-content;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
 
     &::after {
       content: '';
@@ -60,7 +60,7 @@ main {
     text-align: start;
 
     nav {
-      margin: 0 0 2rem;
+      margin: 0 0 1rem;
 
       p {
         font-size: 1.25rem;
